@@ -1,0 +1,3 @@
+Em razão de o modelo possuir o tamanho de 180mb não foi possivel coloca-lo aqui.
+
+Dica para teste: rodar o notebook e descomentar a celula de salvar o modelo no indice 3. 
