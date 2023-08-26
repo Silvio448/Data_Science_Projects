@@ -17,8 +17,13 @@ from sklearn.preprocessing import MinMaxScaler, OneHotEncoder, StandardScaler # 
 from sklearn.impute import SimpleImputer
 
 import time
-import joblib # para salvar o modelo preditivo
-clf = joblib.load('./modelo/modelo_new_clf_treinado.pk')
+import gzip
+import pickle
+import joblib
+
+# Carregar o modelo comprimido
+with gzip.open('./modelo/modelo_new_clf_treinado.pk.gz', 'rb') as f:
+    clf = joblib.load(f)
 
 sns.set()
 #%matplotlib inline
